@@ -1,0 +1,20 @@
+{
+  "name": "terezafabianova.cz",
+  "description": "Homepage terezafabianova.cz",
+  "main": "index.js",
+  "authors": [
+    "janfabian <jan.fabian@topmonks.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/janfabian/terezafabianova.cz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "web",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax.js": "^1.4.2"
+  }
+}

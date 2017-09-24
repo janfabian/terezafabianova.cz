@@ -9,7 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Psychologické Poradenství | Praha | Tereza Fabiánová - Psycholožka</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Psychologické Poradenství | Praha | Tereza Fabiánová - Psycholožka">
+    <meta name="description" content="Psychologické poradenství, problémy ve vztazích a rodině, nespokojenost v&nbsp;práci, zvládání stresu, hledání vize a inspirace">
+    <meta name="keywords" content="psychologie, psycholog, psycholožka, praha, Psychologické poradenství, problémy ve vztazích a rodině, nespokojenost v&nbsp;práci, zvládání stresu, hledání vize a inspirace, kontakt">
+    <meta property="og:title" content="Psychologické Poradenství | Praha | Tereza Fabiánová - Psycholožka">
+    <meta property="og:url" content="https://www.terezafabianova.cz">
+    <meta property="og:description" content="Psychologické poradenství, problémy ve vztazích a rodině, nespokojenost v&nbsp;práci, zvládání stresu, hledání vize a inspirace">
+    <meta name="robots" content="index">
 
     <!-- Bootstrap Core CSS -->
     <link href="startbootstrap-stylish-portfolio/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +28,8 @@
 
     <!-- Custom Fonts -->
     <link href="startbootstrap-stylish-portfolio/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400i|Open+Sans|Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,11 +70,10 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
+        <div class="parallax-window text-vertical-center" data-parallax="scroll" data-image-src="images/bg.jpg">
+            <img src="images/circles.png" width=140/>
             <h1>Tereza Fabiánová</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <h3>psycholožka</h3>
         </div>
     </header>
 
@@ -73,9 +81,14 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="text-center">Jak pracuji</h2>
+
+                    <p>Člověk, který ke mně přichází, může být zmatený, nespokojený, smutný, může mít strach, být naštvaný, nebo úplně stažený. Často neví jak dál, a je pro něj těžké se zorientovat v situaci, ve které se nachází. V takové chvíli se společně snažíme přijít na to, co je pro něj teď nejdůležitější, hledáme orientaci v tom, kde nyní stojí a co potřebuje. Tím, že spolu mluvíme o jeho prožitcích, pocitech a myšlenkách, se nám postupně daří do – původně slepé – mapy zakreslit orientační body. Ty mu pak pomáhají rozhodnout se, jakým směrem se vydat dál a o co se na cestě může opřít.</p>
+                    <p>Mým základním předpokladem je, že každý člověk má v sobě zdroje umožňující mu žít naplněný a spokojený život. Někdy se k tomu dá přiblížit nalezením cest, které jsme dřív neviděli, někdy nám k tomu pomůže smíření s tím, co v tuto chvíli nelze změnit. I když proces psychologické práce není vždy bezbolestný a cíl může na konci vypadat jinak, než jak se zdál na začátku, měl by ho z mého pohledu doprovázet pocit, že tohle je správné – ať už to vypadá jakkoliv – a vědomí, že se přibližujete k sobě samému.</p>
+                    <p>Hodnotami, které jsou pro mě v pracovním i osobním životě klíčové, jsou autentičnost, opravdovost, lidskost a sdílení. Snažím se o maximální otevřenost ve vztahu ke klientům a v naší společné práci Vás vnímám jako partnera.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -85,81 +98,26 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <header class="header inter">
+        <div class="parallax-window text-vertical-center" data-parallax="scroll" data-speed=0.1 data-image-src="images/bg.jpg"></div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
+            <div class="row">
+                <div class="col-lg-2">
                 </div>
-                <!-- /.col-lg-10 -->
+                <div class="col-lg-8">
+                    <h2 class="text-center">Jak bude vypadat naše spolupráce</h2>
+
+                    <p>Při úvodním setkání budu zjišťovat, s čím přicházíte a co byste si rádi z naší spolupráce odnesli. Zároveň budeme mít možnost si vyzkoušet, zda si „sedneme“, jestli máme do další spolupráce chuť. V takovém případě si domluvíme orientační počet a frekvenci setkání. Pokud přijdete se zakázkou, která není v mých kompetencích, doporučím Vám odborníky na danou oblast. </p>
+                </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -223,10 +181,10 @@
 
     <!-- Map -->
     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.8763135217823!2d14.446083215335262!3d50.06987797942472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9481b412c839%3A0x84826e2ca04647b5!2sRybalka!5e0!3m2!1sen!2scz!4v1506282367015"></iframe>
         <br />
         <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.8763135217823!2d14.446083215335262!3d50.06987797942472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9481b412c839%3A0x84826e2ca04647b5!2sRybalka!5e0!3m2!1sen!2scz!4v1506282367015"></a>
         </small>
     </section>
 
@@ -266,6 +224,8 @@
 
     <!-- jQuery -->
     <script src="startbootstrap-stylish-portfolio/js/jquery.js"></script>
+    <!-- parallax image -->
+    <script src="vendor/parallax.js/parallax.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="startbootstrap-stylish-portfolio/js/bootstrap.min.js"></script>

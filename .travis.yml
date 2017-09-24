@@ -7,7 +7,10 @@ matrix:
   fast_finish: true
 before_script:
 - npm install -g gulp-cli
-script: gulp
+- npm install -g bower
+script:
+- bower install
+- gulp
 deploy:
   provider: s3
   access_key_id: AKIAJXEGHUQ5SGL7CLNA
