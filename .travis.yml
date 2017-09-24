@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '8'
+sudo: required
+dist: trusty
+matrix:
+  fast_finish: true
+before_script:
+- npm install -g gulp-cli
+script: gulp
+deploy:
+  provider: s3
+  access_key_id: AKIAJXEGHUQ5SGL7CLNA
+  bucket: www.terezafabianova.cz
+  local-dir: web
+  region: eu-central-1
+  skip_cleanup: true
+  secret_access_key:
+    secure: a6/X5fgyNNsnShDFrar53HJQiX2StgwPA9ZaXXR9GZmIWQq7U75E4ezmwfPDHjF2suH4eXYOb+Bx/dGrirjMy2LvQgYBA1Zi7Ka87z/TjR5ldl8FSCSF8rMoJoF4PG/pz3b/BFqS1BRzuiqGwWYlB5h5oek4z69OZTAc66K/GVgn9mUdg8SVjWs0rHPJgtCqJ5eHsfFAnPJAvp0ow/QwNKKhYXGA2s7uop4JnxVR+E2VkF3ch+0DA3dpC3loN6Ove13n1CRdaqjWYFdgf50jw0yclJT5xYCIyW8IYgxAnSroO0Y5S9GSocR0Df6Sfpl4eYnhoctbTQMYP/Xu19v7pVis4nNp6MMWJB1D7Mc7nY0UdYhTr2kDZGwhhEckbZqHOLrYs2UkqU1MZ1mycAHTomrrkHs8/FinIxrYXzXHKWuyZI/8Sg5Qaksq/A+JMZzdRXiqBsYJsT0ds/m1Uo/vmV9T2CATQZ789TD+9BiKwG9aIEZjv8CQRS7pgApnvswHCcm678lyagytvREop8Q+PdKCBJ098qLSyt1/7F9ekEbaIZ5gCdr6ETIARI7C8AAZai0+lZUhpGe3gv4qIp8hr8ZVY4DkI1ic50O3Z/lPNnzl2SH18Uj39j1+W3NPr7p5r1JfHM6qhkeB19+7qKJnL1rGgFFyFIobi1781Q2zMfA=

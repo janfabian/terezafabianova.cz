@@ -1,0 +1,26 @@
+{
+  "name": "terezafabianova.cz",
+  "version": "1.0.0",
+  "description": "Homepage terezafabianova.cz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janfabian/terezafabianova.cz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janfabian/terezafabianova.cz/issues"
+  },
+  "homepage": "https://github.com/janfabian/terezafabianova.cz#readme",
+  "dependencies": {
+    "startbootstrap-stylish-portfolio": "^3.3.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
