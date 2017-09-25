@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/appleIcon.png" type="image/png">
 
     <title>Psychologické Poradenství | Praha | Tereza Fabiánová - Psycholožka</title>
     <meta property="og:type" content="website">
@@ -25,6 +27,8 @@
     <!-- Custom CSS -->
     <link href="startbootstrap-stylish-portfolio/css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/index.js"></script>
 
     <!-- Custom Fonts -->
     <link href="startbootstrap-stylish-portfolio/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -48,22 +52,19 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>Tereza Fabiánová</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="#jakpracuji" onclick=$("#menu-close").click();>Jak pracuji</a>
             </li>
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
+                <a href="#sluzby" onclick=$("#menu-close").click();>Služby a cena</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="#omne" onclick=$("#menu-close").click();>O mně</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#contact" onclick=$("#menu-close").click();>Kontakt</a>
             </li>
         </ul>
     </nav>
@@ -78,12 +79,10 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="jakpracuji" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
-                </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-lg-offset-2">
                     <h2 class="text-center">Jak pracuji</h2>
 
                     <p>Člověk, který ke mně přichází, může být zmatený, nespokojený, smutný, může mít strach, být naštvaný, nebo úplně stažený. Často neví jak dál, a je pro něj těžké se zorientovat v situaci, ve které se nachází. V takové chvíli se společně snažíme přijít na to, co je pro něj teď nejdůležitější, hledáme orientaci v tom, kde nyní stojí a co potřebuje. Tím, že spolu mluvíme o jeho prožitcích, pocitech a myšlenkách, se nám postupně daří do – původně slepé – mapy zakreslit orientační body. Ty mu pak pomáhají rozhodnout se, jakým směrem se vydat dál a o co se na cestě může opřít.</p>
@@ -96,22 +95,36 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <header class="header inter">
         <div class="parallax-window text-vertical-center" data-parallax="scroll" data-speed=0.1 data-image-src="images/bg.jpg"></div>
     </header>
 
-    <!-- About -->
-    <section id="about" class="about">
+    <!-- sluzby -->
+    <section id="sluzby" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
-                </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-lg-offset-2">
                     <h2 class="text-center">Jak bude vypadat naše spolupráce</h2>
 
                     <p>Při úvodním setkání budu zjišťovat, s čím přicházíte a co byste si rádi z naší spolupráce odnesli. Zároveň budeme mít možnost si vyzkoušet, zda si „sedneme“, jestli máme do další spolupráce chuť. V takovém případě si domluvíme orientační počet a frekvenci setkání. Pokud přijdete se zakázkou, která není v mých kompetencích, doporučím Vám odborníky na danou oblast. </p>
+                    <p>Cena za setkání je 600Kč / 50 minut. </p>
+
+                    <h4 class="text-center">Časté zakázky</h4>
+                    <div class="row zakazky">
+                      <div class="col-lg-4 col-lg-offset-1">
+                        <p>problémy ve vztazích a rodině
+                        <br/> nespokojenost v práci
+                        <br/> životní nespokojenost a stres</p>
+                      </div>
+                      <div class="col-lg-2 text-center">
+                        <img src="images/circles.png" width=100/>
+                      </div>
+                      <div class="col-lg-5">
+                        <p>hledání vize a inspirace
+                        <br/> práce na svém osobním rozvoji
+                        <br/> zjišťování svých vlastních hodnot a potřeb</p>
+                      </div>
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
@@ -119,65 +132,120 @@
         <!-- /.container -->
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <header class="header inter foto">
+        <div class="parallax-window text-vertical-center" data-parallax="scroll" data-speed=0.1 data-image-src="images/tf.jpg"></div>
+    </header>
+
+    <!-- sluzby -->
+    <section id="omne" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="text-center">O mně</h2>
+
+                    <p>Vystudovala jsem jednooborovou psychologii na FF UK a nyní působím jako psycholožka. V minulých letech jsem se pohybovala v oblasti školství, zdravotnictví a psychologie práce. Ve své práci využívám zkušeností ze všech oblastí, kterými jsem prošla a dále se odborně vzdělávám.</p>
+                    <p>Mám ráda svobodu na cestách, kdy se pouze s batohem přesouvám z místa na místo, inspiraci nacházím v knížkách, o kterých mě pak baví diskutovat a velkým odreagováním je pro mě hudba. Stejně jako většina jiných lidí, i já řeším své problémy a nejistoty, a pokud je to příhodné, ráda se o své zkušenosti z vnitřního i vnějšího světa dělím se svými klienty. </p>
+
+                    <div class="row zkusenosti first">
+                        <div class="col-lg-2 text-center">
+                          <img src="images/circles.png" width=80 />
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
+
+                        <div class="col-lg-10">
+                          <h4>Vysokoškolské vzdělání</h4>
+                          <p>
+                            <br /> Jednooborové studium psychologie FF UK – Mgr. titul
+                          </p>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+
+                    <div class="row zkusenosti">
+                        <div class="col-lg-2 text-center">
+                          <img src="images/circles.png" width=80 />
+                        </div>
+
+                        <div class="col-lg-10">
+                          <h4>Pracovní zkušenosti</h4>
+                          <p>
+                            <br /> Soukromá psychologická praxe - nyní
+                            <br />Linka Bezpečí z.s. - Konzultant - nyní
+                            <br />ZŠ Zruč nad Sázavou – psycholog
+                            <br />Vojenský rehabilitační ústav Slapy nad Vltavou – psycholog
+                            <br />Citibank Europe plc – konzultant v oblasti rozvoje a náboru
+                          </p>
+                        </div>
+                    </div>
+
+                    <div class="row zkusenosti">
+                        <div class="col-lg-2 text-center">
+                          <img src="images/circles.png" width=80 />
+                        </div>
+
+                        <div class="col-lg-10">
+                          <h4>Další vzdělávání</h4>
+                          <p>
+                            <br />Telefonická krizová intervence
+                            <br />Sebezkušenostní rozvojová skupina v gestalt přístupu – Terra ateliér
+                            <br />Individuální psychoterapie
+                          </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
+
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
+    <header id="kontaktni_formular" class="header contact">
+      <div class="parallax-window text-vertical-center" data-parallax="scroll" data-speed=0.1 data-image-src="images/bg.jpg">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="well well-sm">
+                <form class="form-horizontal" action="" method="post">
+                <fieldset>
+                  <legend class="text-center">Kontaktní formulář</legend>
+
+                  <!-- Name input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="name">Jméno</label>
+                    <div class="col-md-9">
+                      <input id="name" name="name" type="text" placeholder="Vaše jméno" class="form-control">
+                    </div>
+                  </div>
+
+                  <!-- Email input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="email">Email</label>
+                    <div class="col-md-9">
+                      <input id="email" name="email" type="text" placeholder="Váš email" class="form-control">
+                    </div>
+                  </div>
+
+                  <!-- Message body -->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="message">Zpráva</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" placeholder="Zpráva" rows="5"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Form actions -->
+                  <div class="form-group">
+                    <div class="col-md-11 text-right">
+                      <button type="submit" class="btn btn-primary btn-lg odeslat" disabled>Odeslat</button>
+                    </div>
+                  </div>
+                </fieldset>
+                </form>
+              </div>
+            </div>
             </div>
         </div>
-    </aside>
+        </div>
+    </header>
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -193,33 +261,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Tereza Fabiánová</strong>
                     </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <p>IČO 05678862
+                        <br>Praha 10</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-phone fa-fw"></i>+420 732 454 353</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>
+                          <script type="text/javascript">
+                              gen_mail_to_link("kontakt", "terezafabianova.cz", "");
+                          </script>
+                          <noscript>
+                            <em>Email address protected by JavaScript. Activate JavaScript to see the email.</em>
+                          </noscript>
                         </li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; terezafabianova.cz</p>
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        <!-- <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a> -->
     </footer>
 
     <!-- jQuery -->
@@ -303,7 +366,16 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
     </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-93082327-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
