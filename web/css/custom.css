@@ -92,3 +92,7 @@ header.inter.foto {
   font-size: 1.4em;
   padding: 0;
 }
+
+.grecaptcha-badge {
+  display: none !important;
+}

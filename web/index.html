@@ -29,6 +29,7 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <script src="js/index.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Custom Fonts -->
     <link href="startbootstrap-stylish-portfolio/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -204,7 +205,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div class="well well-sm">
-                <form class="form-horizontal" action="" method="post">
+                <form class="form-horizontal" action="" method="post" id="contact-form">
                 <fieldset>
                   <legend class="text-center">Kontaktní formulář</legend>
 
@@ -212,7 +213,7 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="name">Jméno</label>
                     <div class="col-md-9">
-                      <input id="name" name="name" type="text" placeholder="Vaše jméno" class="form-control">
+                      <input id="name" name="name" type="text" placeholder="Vaše jméno" class="form-control" minlength="2" required>
                     </div>
                   </div>
 
@@ -220,7 +221,7 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="email">Email</label>
                     <div class="col-md-9">
-                      <input id="email" name="email" type="text" placeholder="Váš email" class="form-control">
+                      <input id="email" name="email" type="email" placeholder="Váš email" class="form-control" required>
                     </div>
                   </div>
 
@@ -228,14 +229,18 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="message">Zpráva</label>
                     <div class="col-md-9">
-                      <textarea class="form-control" id="message" name="message" placeholder="Zpráva" rows="5"></textarea>
+                      <textarea class="form-control" id="message" name="message" placeholder="Zpráva" rows="5" minlength="5" required></textarea>
                     </div>
                   </div>
 
                   <!-- Form actions -->
                   <div class="form-group">
                     <div class="col-md-11 text-right">
-                      <button type="submit" class="btn btn-primary btn-lg odeslat" disabled>Odeslat</button>
+                      <div id="recaptcha" class="g-recaptcha"
+                        data-sitekey="6Le_JTQUAAAAAElKqfoHswrLSBvR1YmLofsPw9Oz"
+                        data-callback="onContactSubmit"
+                        data-size="invisible"></div>
+                      <button type="submit" class="btn btn-primary btn-lg odeslat">Odeslat</button>
                     </div>
                   </div>
                 </fieldset>
@@ -264,6 +269,8 @@
                     <h4><strong>Tereza Fabiánová</strong>
                     </h4>
                     <p>IČO 05678862
+                        <br>Rybalka
+                        <br>Rybalkova 55
                         <br>Praha 10</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i>+420 732 454 353</li>
@@ -289,6 +296,7 @@
     <script src="startbootstrap-stylish-portfolio/js/jquery.js"></script>
     <!-- parallax image -->
     <script src="vendor/parallax.js/parallax.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="startbootstrap-stylish-portfolio/js/bootstrap.min.js"></script>
@@ -375,6 +383,39 @@
       ga('create', 'UA-93082327-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+    <script>
+      $.extend( $.validator.messages, {
+        required: "Tento údaj je povinný.",
+        remote: "Prosím, opravte tento údaj.",
+        email: "Prosím, zadejte platný e-mail.",
+        url: "Prosím, zadejte platné URL.",
+        date: "Prosím, zadejte platné datum.",
+        dateISO: "Prosím, zadejte platné datum (ISO).",
+        number: "Prosím, zadejte číslo.",
+        digits: "Prosím, zadávejte pouze číslice.",
+        creditcard: "Prosím, zadejte číslo kreditní karty.",
+        equalTo: "Prosím, zadejte znovu stejnou hodnotu.",
+        extension: "Prosím, zadejte soubor se správnou příponou.",
+        maxlength: $.validator.format( "Prosím, zadejte nejvíce {0} znaků." ),
+        minlength: $.validator.format( "Prosím, zadejte nejméně {0} znaků." ),
+        rangelength: $.validator.format( "Prosím, zadejte od {0} do {1} znaků." ),
+        range: $.validator.format( "Prosím, zadejte hodnotu od {0} do {1}." ),
+        max: $.validator.format( "Prosím, zadejte hodnotu menší nebo rovnu {0}." ),
+        min: $.validator.format( "Prosím, zadejte hodnotu větší nebo rovnu {0}." )
+      } );
+      $(document).ready(function() {
+        $("#contact-form [type=submit]").click(function (event) {
+          event.preventDefault();
+          var $form = $("#contact-form");
+          if (!$form.valid()) {
+            $form.validate().form();
+            return;
+          } else {
+            grecaptcha.execute();
+          }
+        });
+      });
     </script>
 </body>
 
