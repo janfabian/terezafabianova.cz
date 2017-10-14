@@ -27,6 +27,6 @@ function onContactSubmit(data) {
   })
   .always(function() {
     grecaptcha.reset();
-    $form.find("[type=submit]").prop("disabled", false);
+    // $form.find("[type=submit]").prop("disabled", false);
   });
 };
