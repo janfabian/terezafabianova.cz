@@ -19,12 +19,14 @@ function onContactSubmit(data) {
     contentType: "application/json; charset=utf-8"
   })
   .done(function(data) {
-    console.log(data);
+    alert("Vaše zpráva byla úspěšně odeslána");
+    $form.find("[name]").val("");
   })
   .error(function(error) {
     alert(JSON.stringify(error));
   })
   .always(function() {
-    grecaptcha.reset()
+    grecaptcha.reset();
+    $form.find("[type=submit]").prop("disabled", false);
   });
 };
