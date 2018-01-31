@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/janfabian/terezafabianova.cz#readme",
   "dependencies": {
-    "startbootstrap-stylish-portfolio": "^4.0.0"
+    "startbootstrap-stylish-portfolio": "3.x"
   },
   "devDependencies": {
     "bower": "^1.8.2",
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "http-server": "^0.11.1"
   }
 }
