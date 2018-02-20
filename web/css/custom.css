@@ -9,6 +9,15 @@ p {
   padding-bottom: 1em;
 }
 
+.materska {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+  position: fixed;
+  z-index: 1000;
+}
+
 .text-vertical-center h1 {
     font-weight: lighter;
     font-family: "Bitter", serif;
