@@ -21,7 +21,7 @@
     "startbootstrap-stylish-portfolio": "3.x"
   },
   "devDependencies": {
-    "bower": "^1.8.2",
+    "bower": "^1.8.6",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "http-server": "^0.11.1"
