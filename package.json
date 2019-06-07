@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "bower": "^1.8.2",
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.26.6",
     "gulp": "^3.9.1",
     "http-server": "^0.11.1"
   }
