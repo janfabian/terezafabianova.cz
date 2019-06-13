@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/janfabian/terezafabianova.cz#readme",
   "dependencies": {
-    "startbootstrap-stylish-portfolio": "3.x"
+    "startbootstrap-stylish-portfolio": "^5.0.6"
   },
   "devDependencies": {
     "bower": "^1.8.2",
