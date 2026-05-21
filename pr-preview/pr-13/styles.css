@@ -420,15 +420,22 @@ section .section-head{
 .post-perex p{ margin: 0; font-size: 15.5px; line-height: 1.65; color: var(--ink-2); }
 
 /* ── Blog post page (individual article) ─────── */
+/* On a post page, the crumb row holds the date + "koláž" on the left and a
+   "← zpět na blog" link pushed to the right. */
+.crumb-post{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 .post-back-top{
-  display: inline-block;
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-3);
   text-decoration: none;
-  margin-bottom: clamp(28px, 3vw, 44px);
   transition: color .15s, transform .15s;
 }
 .post-back-top:hover{ color: var(--accent); transform: translateX(-3px); }
