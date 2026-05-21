@@ -10,7 +10,7 @@
   --ink-3:     oklch(0.52 0.008 60);
   --rule:      oklch(0.82 0.006 60);
   --rule-2:    oklch(0.70 0.010 60);
-  --accent:    #1f5a4a;
+  --accent:    #1f3a8a;
   --maxw:      1320px;
   --gutter:    clamp(24px, 4.5vw, 72px);
   --pad-sec:   clamp(100px, 12vw, 200px);
