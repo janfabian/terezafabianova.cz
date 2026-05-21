@@ -433,48 +433,17 @@ section .section-head{
 .contact-block a{ color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-2); }
 .contact-block a:hover{ border-bottom-color: var(--accent); }
 
-/* ── Contact map (OSM iframe, tinted to fit the cream palette) ── */
+/* ── Contact map (Google Maps embed) ─────────── */
 .contact-map{
   margin-top: clamp(48px, 6vw, 88px);
   border: 1px solid var(--rule);
   overflow: hidden;
-  background: var(--bg-soft);
 }
 .contact-map iframe{
   width: 100%;
-  height: clamp(280px, 42vh, 460px);
+  height: clamp(420px, 65vh, 680px);
   border: 0;
   display: block;
-  /* Warm sepia-tinted to match the cream / terracotta palette */
-  filter: sepia(0.45) saturate(0.7) hue-rotate(-8deg) contrast(0.95) brightness(0.99);
-}
-html[data-dark="true"] .contact-map iframe{
-  /* Dark mode: invert then re-tint */
-  filter: invert(0.9) hue-rotate(180deg) sepia(0.3) saturate(0.85) brightness(0.92);
-}
-.contact-map-foot{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  padding: 14px 20px;
-  border-top: 1px solid var(--rule);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  background: var(--bg);
-}
-.contact-map-foot a{
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--accent);
-  white-space: nowrap;
-}
-.contact-map-foot a:hover{ color: var(--accent); }
-@media (max-width: 600px){
-  .contact-map-foot{ flex-direction: column; align-items: flex-start; gap: 6px; }
 }
 
 /* ── Next link (bottom of each page) ─────────── */
