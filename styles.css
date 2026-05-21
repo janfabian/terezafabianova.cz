@@ -83,7 +83,8 @@ img{ max-width:100%; display:block; }
 .nav-actions{ display: flex; align-items: center; gap: 10px; }
 .nav-cta{
   display: inline-flex; align-items: center; gap: 12px;
-  padding: 14px 22px;
+  height: 40px;
+  padding: 0 22px;
   background: var(--accent); color: #fff;
   border: 1px solid var(--accent);
   text-decoration: none;
@@ -112,7 +113,7 @@ img{ max-width:100%; display:block; }
 /* ── Theme toggle (sun/moon) ─────────────────── */
 .theme-toggle{
   display: inline-flex; align-items: center; justify-content: center;
-  width: 38px; height: 38px;
+  width: 40px; height: 40px;
   border: 1px solid var(--rule-2);
   background: transparent;
   color: var(--ink-2);
@@ -547,10 +548,11 @@ footer a:hover{ color: var(--accent); }
     padding: 0;
     margin: 0 calc(-1 * var(--gutter));
     background: var(--bg);
-    border-top: 1px solid var(--rule);
   }
+  /* Top border only when expanded — otherwise it doubles up with .nav's border-bottom. */
   .nav-toggle:checked ~ ul{
     max-height: 480px;
+    border-top: 1px solid var(--rule);
   }
   .nav ul li{ border-bottom: 1px solid var(--rule); }
   .nav ul li:last-child{ border-bottom: 0; }
@@ -565,7 +567,7 @@ footer a:hover{ color: var(--accent); }
 
   .nav-cta{
     order: 3;
-    padding: 10px 14px;
+    padding: 0 14px;
     font-size: 12.5px;
   }
 
