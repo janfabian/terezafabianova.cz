@@ -23,11 +23,23 @@
   <url>
     <loc>https://janfabian.github.io/terezafabianova.cz/blog.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://janfabian.github.io/terezafabianova.cz/kontakt.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://janfabian.github.io/terezafabianova.cz/posts/prirozenost-vln.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://janfabian.github.io/terezafabianova.cz/posts/co-to-je-compassion.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
