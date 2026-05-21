@@ -548,10 +548,11 @@ footer a:hover{ color: var(--accent); }
     padding: 0;
     margin: 0 calc(-1 * var(--gutter));
     background: var(--bg);
-    border-top: 1px solid var(--rule);
   }
+  /* Top border only when expanded — otherwise it doubles up with .nav's border-bottom. */
   .nav-toggle:checked ~ ul{
     max-height: 480px;
+    border-top: 1px solid var(--rule);
   }
   .nav ul li{ border-bottom: 1px solid var(--rule); }
   .nav ul li:last-child{ border-bottom: 0; }
