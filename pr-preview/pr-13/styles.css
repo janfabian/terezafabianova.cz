@@ -420,6 +420,19 @@ section .section-head{
 .post-perex p{ margin: 0; font-size: 15.5px; line-height: 1.65; color: var(--ink-2); }
 
 /* ── Blog post page (individual article) ─────── */
+.post-back-top{
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-decoration: none;
+  margin-bottom: clamp(28px, 3vw, 44px);
+  transition: color .15s, transform .15s;
+}
+.post-back-top:hover{ color: var(--accent); transform: translateX(-3px); }
+
 .post-page{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 8px; }
 .post-page > *{ grid-column: 2 / span 8; }
 .post-page p{ margin: 0 0 22px; font-size: 17px; line-height: 1.75; color: var(--ink); }
