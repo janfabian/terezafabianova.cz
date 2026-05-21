@@ -109,6 +109,9 @@ img{ max-width:100%; display:block; }
 
 .nav-toggle{ position: absolute; left: -9999px; opacity: 0; }
 .nav-burger{ display: none; }
+/* Nav items flagged mobile-only sit hidden on desktop; revealed inside the
+   <900px breakpoint along with the hamburger menu. */
+.nav ul li.mobile-only{ display: none; }
 
 /* ── Theme toggle (sun/moon) ─────────────────── */
 .theme-toggle{
@@ -568,6 +571,7 @@ footer a:hover{ color: var(--accent); }
     border-top: 1px solid var(--rule);
   }
   .nav ul li{ border-bottom: 1px solid var(--rule); }
+  .nav ul li.mobile-only{ display: list-item; }
   .nav ul li:last-child{ border-bottom: 0; }
   .nav ul a{
     display: block;
