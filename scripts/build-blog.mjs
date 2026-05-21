@@ -131,9 +131,11 @@ ${nav(1, 'blog')}
 
 <header class="page-hero tone" data-screen-label="${esc(post.title)}">
   <div class="wrap">
-    <a class="post-back-top" href="../blog.html">← zpět na blog</a>
     <div class="grid12">
-      <div class="crumb"><span class="eyebrow">${post.date_display} · koláž</span></div>
+      <div class="crumb crumb-post">
+        <span class="eyebrow">${post.date_display} · koláž</span>
+        <a class="post-back-top" href="../blog.html">← zpět na blog</a>
+      </div>
       <h1>${esc(post.title)}</h1>
       <p class="lede italic">${esc(post.perex)}</p>
     </div>
