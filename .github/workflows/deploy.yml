@@ -3,13 +3,25 @@ name: Deploy
 on:
   push:
     branches: [master]
+    # Skip when only non-site files change.
+    paths-ignore:
+      - 'README.md'
+      - '.claude/**'
   pull_request:
     types: [opened, reopened, synchronize, closed]
+    paths-ignore:
+      - 'README.md'
+      - '.claude/**'
 
-# Prevent concurrent deploys racing on the same ref.
+# Two distinct concurrency lanes so prod and PR events never cancel each other:
+# - Production (push to master): queue, never cancel — every commit must deploy.
+# - PR previews: cancel-in-progress so a fast-follow commit supersedes the old build.
 concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  group: >-
+    ${{ github.event_name == 'pull_request'
+        && format('pages-pr-{0}', github.event.number)
+        || 'pages-prod' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   deploy:
