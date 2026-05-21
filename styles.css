@@ -398,32 +398,56 @@ section .section-head{
 .cv-body b{ font-weight: 500; display:block; }
 .cv-body span{ display:block; color: var(--ink-2); margin-top: 4px; font-size: 13.5px; }
 
-/* ── Blog ────────────────────────────────────── */
+/* ── Blog index ──────────────────────────────── */
 .blog-list{ display:flex; flex-direction:column; gap: 0; }
 .post{ border-top: 1px solid var(--rule); padding: clamp(28px, 3vw, 48px) 0; display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 16px; }
 .post:last-child{ border-bottom: 1px solid var(--rule); }
 .post-date{ grid-column: 1 / span 2; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); padding-top: 8px; }
-.post-head{ grid-column: 3 / span 9; display:flex; align-items: baseline; justify-content: space-between; gap: 24px; cursor: default; }
+.post-head{ grid-column: 3 / span 9; display:flex; align-items: baseline; justify-content: space-between; gap: 24px; }
 .post-head h3{ margin:0; font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); letter-spacing: -0.015em; line-height: 1.15; }
+.post-head h3 a{ color: inherit; text-decoration: none; transition: color .15s; }
+.post-head h3 a:hover{ color: var(--accent); }
 .post-toggle{
-  appearance:none; background:transparent; border:1px solid var(--rule-2); color: var(--ink);
+  display: inline-flex; align-items: center;
+  border: 1px solid var(--rule-2); color: var(--ink);
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 8px 12px; cursor: default; white-space: nowrap;
-  transition: background .15s, color .15s;
+  padding: 8px 12px; white-space: nowrap;
+  text-decoration: none;
+  transition: background .15s, color .15s, border-color .15s;
 }
 .post-toggle:hover{ background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.post-body{
-  grid-column: 3 / span 8;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows .35s ease;
+.post-perex{ grid-column: 3 / span 8; }
+.post-perex p{ margin: 0; font-size: 15.5px; line-height: 1.65; color: var(--ink-2); }
+
+/* ── Blog post page (individual article) ─────── */
+/* On a post page, the crumb row holds the date + "koláž" on the left and a
+   "← zpět na blog" link pushed to the right. */
+.crumb-post{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
-.post-body > div{ overflow: hidden; }
-.post.open .post-body{ grid-template-rows: 1fr; }
-.post-body p{ margin: 0 0 14px; font-size: 15px; line-height: 1.7; color: var(--ink); }
-.post-body p:last-child{ margin-bottom: 0; }
-.post-body strong{ font-weight: 500; }
-.post-body em{ font-style: italic; }
+.post-back-top{
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color .15s, transform .15s;
+}
+.post-back-top:hover{ color: var(--accent); transform: translateX(-3px); }
+
+.post-page{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 8px; }
+.post-page > *{ grid-column: 2 / span 8; }
+.post-page p{ margin: 0 0 22px; font-size: 17px; line-height: 1.75; color: var(--ink); }
+.post-page p:last-child{ margin-bottom: 0; }
+.post-page strong{ font-weight: 500; }
+.post-page em{ font-style: italic; }
+.post-page a{ color: var(--ink); border-bottom: 1px solid var(--accent); text-decoration: none; }
+.post-page a:hover{ color: var(--accent); }
 
 /* ── Kontakt ─────────────────────────────────── */
 .contact-grid{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 32px; }
@@ -602,7 +626,7 @@ footer a:hover{ color: var(--accent); }
   .metaphor-label, .metaphor-body,
   .cta-row .a, .cta-row .b,
   .kabat blockquote, .kabat cite,
-  .post-date, .post-head, .post-body,
+  .post-date, .post-head, .post-perex, .post-page > *,
   .contact-h, .contact-info,
   .lekce h3, .lekce .when, .lekce .desc,
   .next-link .label, .next-link .title

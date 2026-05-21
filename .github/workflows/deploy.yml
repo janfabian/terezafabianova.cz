@@ -32,8 +32,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Generate blog.html, posts/<slug>.html, sitemap.xml from posts/*.json.
+      # The script has zero dependencies (node stdlib only), no install step.
+      - name: Build blog
+        run: node scripts/build-blog.mjs
+
       # Stage only the files we actually want to publish, so .github,
-      # .claude, README.md etc. don't end up on gh-pages.
+      # .claude, README.md, scripts/, posts/*.json etc. don't end up on gh-pages.
       - name: Stage site
         run: |
           mkdir -p _site
@@ -44,6 +54,8 @@ jobs:
             --exclude='.gitignore' \
             --exclude='README.md' \
             --exclude='_site' \
+            --exclude='scripts' \
+            --exclude='posts/*.json' \
             ./ _site/
 
       # Production deploy: pushes to master replace the root of gh-pages,
