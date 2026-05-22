@@ -379,7 +379,7 @@ section .section-head{
 .cv-hero-title{ grid-column: 1 / span 7; align-self: end; }
 .cv-hero-title h1{
   font-weight: 300;
-  font-size: clamp(40px, 7.2vw, 104px);
+  font-size: clamp(20px, 3.6vw, 52px);
   line-height: 0.96;
   letter-spacing: -0.028em;
   margin: 0 0 24px;
