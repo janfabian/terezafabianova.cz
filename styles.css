@@ -150,7 +150,7 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
 .hero h1{
   grid-column: 1 / span 11;
   font-weight: 300;
-  font-size: clamp(32px, 6vw, 88px);
+  font-size: clamp(28px, 5vw, 72px);
   line-height: 0.94;
   letter-spacing: -0.03em;
   margin: 0;
@@ -167,15 +167,20 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
   max-width: 38ch;
 }
 .hero .meta{
-  grid-column: 1 / span 6;
+  grid-column: 1 / -1;
   margin-top: 36px;
-  font-size: 13.5px;
+  font-size: 11px;
   color: var(--ink-3);
   line-height: 1.5;
 }
-.hero .meta b{ display:block; color: var(--ink); font-weight: 500; letter-spacing: -0.005em; margin-bottom: 6px; }
-.hero .meta .meta-roles{ display: block; }
-.hero .meta .sep{ display: inline-block; color: var(--ink-3); margin: 0 6px; }
+.hero .meta b{
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.hero .meta .sep{ display: inline-block; color: var(--ink-3); margin: 0 8px; vertical-align: middle; }
 .hero-image{ grid-column: 1 / -1; margin-top: clamp(40px, 5vw, 64px); }
 
 /* ── Page hero (subpages) ────────────────────── */
