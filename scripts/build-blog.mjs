@@ -85,7 +85,7 @@ function postPage(post) {
 <title>${esc(post.title)} — tereza fabiánová · blog</title>
 <meta name="description" content="${esc(post.perex)}">
 <meta name="author" content="Mgr. Tereza Fabiánová">
-<meta name="theme-color" content="#c2603a">
+<meta name="theme-color" content="#2a4566">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Tereza Fabiánová">
 <meta property="og:type" content="article">
@@ -194,7 +194,7 @@ function blogIndex(posts) {
 <meta name="description" content="Texty o psychoterapii, mindfulness, všímavosti a každodenní praxi. Blog Mgr. Terezy Fabiánové, psycholožky a lektorky MBSR v Praze.">
 <meta name="keywords" content="blog psychoterapie, blog mindfulness, všímavost, texty o terapii, články psychologie">
 <meta name="author" content="Mgr. Tereza Fabiánová">
-<meta name="theme-color" content="#c2603a">
+<meta name="theme-color" content="#2a4566">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Tereza Fabiánová">
 <meta property="og:type" content="website">
