@@ -2,15 +2,18 @@
    Tereza Fabiánová — shared stylesheet
    ────────────────────────────────────────────── */
 :root{
-  --bg:        oklch(0.988 0.003 85);
-  --bg-soft:   oklch(0.955 0.006 75);
-  --bg-warm:   oklch(0.905 0.014 55);
-  --ink:       oklch(0.14 0.010 60);
-  --ink-2:     oklch(0.34 0.010 60);
-  --ink-3:     oklch(0.52 0.008 60);
-  --rule:      oklch(0.82 0.006 60);
-  --rule-2:    oklch(0.70 0.010 60);
-  --accent:    #1f3a8a;
+  /* Palette B2 — derived from the hero kilim photo:
+     walnut text, indigo secondary (from photo's cool shadows),
+     light almond tertiary, sienna accent. */
+  --bg:        #fdfaf5;
+  --bg-soft:   #f4ede2;
+  --bg-warm:   #e8d8c0;
+  --ink:       #3a2a1d;
+  --ink-2:     #2a4566;
+  --ink-3:     #a89080;
+  --rule:      #d8c8b8;
+  --rule-2:    #b8a890;
+  --accent:    #c2603a;
   --maxw:      1320px;
   --gutter:    clamp(24px, 4.5vw, 72px);
   --pad-sec:   clamp(100px, 12vw, 200px);
@@ -21,14 +24,14 @@
 html[data-density="compact"]{ --pad-sec: clamp(60px, 8vw, 120px); --gap-row: clamp(32px, 4vw, 60px); }
 html[data-density="comfy"]  { --pad-sec: clamp(140px, 18vw, 280px); --gap-row: clamp(72px, 9vw, 128px); }
 html[data-dark="true"]{
-  --bg:        oklch(0.18 0.010 60);
-  --bg-soft:   oklch(0.22 0.012 60);
-  --bg-warm:   oklch(0.26 0.015 50);
-  --ink:       oklch(0.94 0.005 80);
-  --ink-2:     oklch(0.78 0.008 70);
-  --ink-3:     oklch(0.60 0.008 70);
-  --rule:      oklch(0.32 0.010 60);
-  --rule-2:    oklch(0.42 0.010 60);
+  --bg:        #1a1410;
+  --bg-soft:   #221a14;
+  --bg-warm:   #2c1f18;
+  --ink:       #ede0cf;
+  --ink-2:     #a0bdd6;
+  --ink-3:     #8a7d72;
+  --rule:      #4a3a30;
+  --rule-2:    #5a4838;
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
