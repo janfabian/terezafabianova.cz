@@ -9,7 +9,7 @@
   --bg-soft:   #f4ede2;
   --bg-warm:   #e8d8c0;
   --ink:       #3a2a1d;
-  --ink-2:     #c2603a;
+  --ink-2:     #6a5544;
   --ink-3:     #a89080;
   --rule:      #d8c8b8;
   --rule-2:    #b8a890;
@@ -28,7 +28,7 @@ html[data-dark="true"]{
   --bg-soft:   #221a14;
   --bg-warm:   #2c1f18;
   --ink:       #ede0cf;
-  --ink-2:     #d8845a;
+  --ink-2:     #b5a594;
   --ink-3:     #8a7d72;
   --rule:      #4a3a30;
   --rule-2:    #5a4838;
