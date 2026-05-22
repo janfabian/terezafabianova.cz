@@ -143,8 +143,8 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
 
 /* ── Hero (home) ─────────────────────────────── */
 .hero{
-  padding-top: clamp(80px, 12vw, 200px);
-  padding-bottom: clamp(60px, 8vw, 120px);
+  padding-top: clamp(40px, 5vw, 90px);
+  padding-bottom: clamp(48px, 6vw, 96px);
   border-bottom: 1px solid var(--rule);
 }
 .hero h1{
@@ -153,7 +153,7 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
   font-size: clamp(44px, 9vw, 132px);
   line-height: 0.94;
   letter-spacing: -0.03em;
-  margin: 24px 0 0;
+  margin: 0;
   color: var(--ink);
 }
 .hero h1 em{ font-style: normal; color: var(--accent); font-weight: 300; }
