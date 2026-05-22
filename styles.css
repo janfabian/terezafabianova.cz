@@ -150,7 +150,7 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
 .hero h1{
   grid-column: 1 / span 11;
   font-weight: 300;
-  font-size: clamp(44px, 9vw, 132px);
+  font-size: clamp(32px, 6vw, 88px);
   line-height: 0.94;
   letter-spacing: -0.03em;
   margin: 0;
