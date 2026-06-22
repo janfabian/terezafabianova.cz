@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = join(ROOT, 'posts');
-const BASE_URL = 'https://janfabian.github.io/terezafabianova.cz';
+const BASE_URL = 'https://terezafabianova.cz';
 
 // ── HTML escaping for meta-tag content (titles, descriptions). ───────────────
 const esc = (s) =>

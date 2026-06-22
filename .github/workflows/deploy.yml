@@ -67,6 +67,10 @@ jobs:
           folder: _site
           branch: gh-pages
           clean-exclude: pr-preview/
+          # Persist the custom-domain marker. The clean deploy above would
+          # otherwise drop CNAME, which makes GitHub Pages unset the custom
+          # domain and revert the site to janfabian.github.io.
+          cname: terezafabianova.cz
 
       # PR preview deploy: every PR event mounts the site at
       # /pr-preview/pr-<number>/ on the gh-pages branch and comments
