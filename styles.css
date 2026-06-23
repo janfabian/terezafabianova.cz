@@ -250,6 +250,8 @@ section .section-head{
 /* ── About ───────────────────────────────────── */
 .about-grid{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 32px; }
 .about-portrait{ grid-column: 2 / span 4; }
+/* Portrait scaled to 2/3 (reduced by a third) per Tereza's request. */
+.about-portrait .ph-crop{ width: 66.67%; }
 .about-body{ grid-column: 7 / span 5; display:flex; flex-direction: column; gap: 18px; }
 .about-body p{ margin: 0; font-size: 16px; line-height: 1.65; color: var(--ink); }
 .about-body strong{ font-weight: 500; }
@@ -685,6 +687,10 @@ footer a:hover{ color: var(--accent); }
   .lekce h3, .lekce .when, .lekce .desc,
   .next-link .label, .next-link .title
   { grid-column: 1 / -1 !important; }
+
+  /* Centre the reduced portrait (and its badge) on phone so the 2/3-width
+     photo isn't stranded against the left edge. */
+  .about-portrait{ display: flex; flex-direction: column; align-items: center; }
 
   .kde-grid{ grid-template-columns: 1fr; }
 
