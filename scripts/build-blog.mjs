@@ -219,7 +219,7 @@ ${nav(0, 'blog')}
 
 <main>
 
-<header class="page-hero tone" data-screen-label="Blog">
+<header class="page-hero page-hero-sm tone" data-screen-label="Blog">
   <div class="wrap">
     <div class="grid12">
       <h1>koláž / <em>blog</em></h1>
