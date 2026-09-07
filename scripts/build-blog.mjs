@@ -210,7 +210,14 @@ ${nav(0, 'blog')}
 
 <main>
 
-<header class="page-hero page-hero-sm tone" data-screen-label="Blog">
+<!-- FOTO HNED POD HORNÍ LIŠTOU (varianta D) -->
+<div class="pt-hero-image tone-band">
+  <div class="wrap">
+    <div class="ph-crop r-3-1"><img src="images/blog-matcha.jpg" alt="Šálek čaje na rohoži" width="1600" height="1067" class="ph-img" loading="lazy" style="object-position: 50% 40%;"></div>
+  </div>
+</div>
+
+<header class="page-hero page-hero-sm tone pt-hero" data-screen-label="Blog">
   <div class="wrap">
     <div class="grid12">
       <h1>koláž / <em>blog</em></h1>
@@ -218,13 +225,8 @@ ${nav(0, 'blog')}
   </div>
 </header>
 
-<section class="tone no-top-border" style="border-top: 0;">
+<section class="tone no-top-border pt-hero-section" style="border-top: 0;">
   <div class="wrap">
-    <div class="grid12" style="margin-bottom: clamp(48px,6vw,80px);">
-      <div style="grid-column: 1 / -1;">
-        <div class="ph-crop r-3-1"><img src="images/blog-matcha.jpg" alt="Šálek čaje na rohoži" width="1600" height="1067" class="ph-img" loading="lazy" style="object-position: 50% 40%;"></div>
-      </div>
-    </div>
 
     <aside class="blog-kolaz">
       <div class="blog-kolaz-label">koláž</div>
