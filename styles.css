@@ -459,6 +459,8 @@ section.pt-hero-section{ padding-top: clamp(20px, 2.5vw, 36px); }
   color: var(--ink);
 }
 .cv-hero-title .lede{ margin: 0; max-width: 30ch; font-size: var(--fs-lede); color: var(--ink-2); }
+.cv-hero-roles{ margin: 0; font-size: var(--fs-small); color: var(--ink-2); line-height: 1.5; }
+.cv-hero-roles .sep{ color: var(--ink-3); margin: 0 8px; }
 .cv-hero-photo{ grid-column: 9 / span 4; }
 
 .cv-grid{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; }
