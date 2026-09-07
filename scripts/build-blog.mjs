@@ -152,15 +152,6 @@ ${post.html.split('\n').map((l) => '      ' + l).join('\n')}
 
 </main>
 
-<div class="next-link">
-  <div class="wrap">
-    <a href="../blog.html">
-      <span class="label">← zpět na</span>
-      <span class="title">blog · koláž</span>
-    </a>
-  </div>
-</div>
-
 ${footer(1)}
 
 </body>
@@ -249,15 +240,6 @@ ${items}
 </section>
 
 </main>
-
-<div class="next-link">
-  <div class="wrap">
-    <a href="kontakt.html">
-      <span class="label">další →</span>
-      <span class="title">kontakt <span class="arrow">→</span></span>
-    </a>
-  </div>
-</div>
 
 ${footer(0)}
 
