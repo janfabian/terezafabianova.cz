@@ -213,8 +213,10 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
 .hero-image{ grid-column: 1 / -1; margin-top: clamp(40px, 5vw, 64px); }
 /* Home hero (option D): photo sits between the title and the intro line;
    the intro stays right-aligned on desktop (base rule) and turns italic. */
-.hero-photo-mid{ padding-top: clamp(24px, 3vw, 56px); }
+.hero-photo-mid{ padding-top: clamp(24px, 3vw, 56px); padding-bottom: clamp(28px, 4vw, 56px); }
 .hero-photo-mid .lede{ font-style: italic; }
+/* Home "o mně" section pulled up — less empty space under the hero. */
+section.about-lift{ padding-top: clamp(40px, 5vw, 72px); }
 
 /* ── Page hero (subpages) ────────────────────── */
 .page-hero{
