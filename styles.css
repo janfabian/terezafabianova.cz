@@ -287,6 +287,11 @@ section .section-head{
 
 /* ── Psychoterapie ───────────────────────────── */
 .pt-image{ grid-column: 1 / -1; margin-bottom: clamp(40px, 5vw, 64px); }
+/* Photo-first top (option D): photo right under the nav, heading below it,
+   tightened spacing. Scoped to psychoterapie so shared classes stay untouched. */
+.pt-hero-image{ padding-top: clamp(20px, 2.5vw, 32px); }
+.page-hero.pt-hero{ padding-top: clamp(24px, 3vw, 40px); padding-bottom: clamp(16px, 2vw, 28px); border-bottom: 0; }
+section.pt-hero-section{ padding-top: clamp(20px, 2.5vw, 36px); }
 .pt-cols{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 32px; }
 .pt-col{ font-size: var(--fs-body); line-height: var(--lh-body); display:flex; flex-direction:column; gap: 14px; }
 .pt-col strong{ font-weight: 500; }
