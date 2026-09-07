@@ -211,6 +211,10 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
 .hero .meta .meta-roles{ display: block; margin-top: 4px; }
 .hero .meta .sep{ display: inline-block; color: var(--ink-3); margin: 0 8px; }
 .hero-image{ grid-column: 1 / -1; margin-top: clamp(40px, 5vw, 64px); }
+/* Home hero (option D): photo sits between the title and the intro line;
+   the intro stays right-aligned on desktop (base rule) and turns italic. */
+.hero-photo-mid{ padding-top: clamp(24px, 3vw, 56px); }
+.hero-photo-mid .lede{ font-style: italic; }
 
 /* ── Page hero (subpages) ────────────────────── */
 .page-hero{
@@ -754,6 +758,7 @@ footer a:hover{ color: var(--accent); }
   .hero{ padding-top: clamp(56px, 10vw, 90px); padding-bottom: clamp(40px, 7vw, 64px); }
   .hero h1{ font-size: clamp(40px, 11vw, 64px); margin-top: 18px; }
   .hero .lede{ margin-top: 24px; }
+  .hero-photo-mid .lede{ font-style: normal; }
   .hero .meta{ margin-top: 28px; }
 
   .page-hero{ padding-top: clamp(48px, 10vw, 80px); padding-bottom: clamp(36px, 7vw, 60px); }
