@@ -290,6 +290,8 @@ section .section-head{
 /* Photo-first top (option D): photo right under the nav, heading below it,
    tightened spacing. Scoped to psychoterapie so shared classes stay untouched. */
 .pt-hero-image{ padding-top: clamp(20px, 2.5vw, 32px); }
+/* Full-width soft-tint band, so the photo area matches a tinted hero/section. */
+.tone-band{ background: var(--bg-soft); }
 .page-hero.pt-hero{ padding-top: clamp(24px, 3vw, 40px); padding-bottom: clamp(16px, 2vw, 28px); border-bottom: 0; }
 section.pt-hero-section{ padding-top: clamp(20px, 2.5vw, 36px); }
 .pt-cols{ display:grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 32px; }
