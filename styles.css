@@ -158,6 +158,17 @@ html[data-dark="true"] .theme-toggle .icon-moon{ display: none; }
   color: var(--ink-3);
 }
 
+/* ── Course announcement banner (under the nav) ── */
+.course-banner{ display: block; background: var(--accent); color: #fff; text-decoration: none; border-bottom: 1px solid var(--accent); }
+.course-banner-inner{ display: flex; align-items: center; gap: 20px; max-width: var(--maxw); margin: 0 auto; padding: 14px var(--gutter); flex-wrap: wrap; }
+.course-banner-thumb{ width: 48px; height: 68px; object-fit: cover; border: 1px solid rgba(255,255,255,.5); flex: 0 0 auto; }
+.course-banner-text{ display: flex; flex-direction: column; gap: 3px; flex: 1 1 260px; min-width: 0; }
+.course-banner-eyebrow{ font-family: var(--mono); font-size: var(--fs-eyebrow); letter-spacing: var(--ls-eyebrow); text-transform: uppercase; color: rgba(255,255,255,.72); }
+.course-banner-title{ font-size: var(--fs-body); font-weight: 500; }
+.course-banner-meta{ font-size: var(--fs-small); color: rgba(255,255,255,.85); }
+.course-banner-cta{ flex: 0 0 auto; white-space: nowrap; font-family: var(--sans); font-size: var(--fs-eyebrow); letter-spacing: var(--ls-eyebrow); text-transform: uppercase; border: 1px solid #fff; padding: 10px 18px; transition: background .15s, color .15s; }
+.course-banner:hover .course-banner-cta{ background: #fff; color: var(--accent); }
+
 /* ── Hero (home) ─────────────────────────────── */
 .hero{
   padding-top: clamp(40px, 5vw, 90px);
