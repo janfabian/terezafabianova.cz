@@ -336,8 +336,8 @@ section .section-head{
 .mf-flyer-img{ display: block; }
 .mf-flyer-img img{ width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
 .mf-flyer-body{ display: flex; flex-direction: column; gap: 14px; }
-.mf-flyer-body h3{ margin: 0; font-weight: 300; font-size: var(--fs-h3); letter-spacing: -0.015em; }
-.mf-flyer-body h3 em{ font-style: normal; color: var(--accent); }
+.mf-flyer .mf-flyer-body h3{ margin: 0; font-weight: 300; font-size: var(--fs-h3); letter-spacing: -0.015em; }
+.mf-flyer .mf-flyer-body h3 em{ font-style: normal; color: var(--accent); }
 .mf-flyer-body p{ margin: 0; font-size: var(--fs-body); line-height: var(--lh-body); color: var(--ink); }
 .mf-flyer-meta{ font-family: var(--mono); font-size: var(--fs-eyebrow); letter-spacing: var(--ls-eyebrow); text-transform: uppercase; color: var(--ink-2); line-height: 1.7; }
 .mf-flyer .btn{ align-self: flex-start; }
