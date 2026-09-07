@@ -311,7 +311,7 @@ section .section-head{
 .mf-claim{
   grid-column: 2 / span 9;
   font-weight: 300;
-  font-size: var(--fs-h2);
+  font-size: clamp(26px, 3vw, 42px);
   line-height: 1.08;
   letter-spacing: -0.02em;
   margin: 0 0 clamp(48px, 6vw, 80px);
@@ -412,6 +412,9 @@ section .section-head{
 .kde{ margin-top: clamp(64px, 7vw, 96px); }
 .kde h3{ font-weight: 300; font-size: var(--fs-h3); letter-spacing: -0.015em; margin: 0 0 clamp(28px, 3vw, 48px); }
 .kde-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+/* Course leaflet, aligned under the middle card. */
+.kde-flyer{ grid-column: 2; display: block; margin-top: clamp(20px, 3vw, 40px); }
+.kde-flyer img{ width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
 .kde-card{ display:flex; flex-direction:column; gap: 16px; }
 .kde-card h4{ margin:0; font-weight: 500; font-size: var(--fs-body); letter-spacing: -0.005em; }
 .kde-card p{ margin:0; font-size: var(--fs-small); line-height: var(--lh-body); color: var(--ink-2); }
@@ -727,6 +730,7 @@ footer a:hover{ color: var(--accent); }
   .about-portrait{ display: flex; flex-direction: column; align-items: center; }
 
   .kde-grid{ grid-template-columns: 1fr; }
+  .kde-flyer{ grid-column: 1; max-width: 360px; margin-left: auto; margin-right: auto; }
 
   /* Hero typography tighter on phone */
   .hero{ padding-top: clamp(56px, 10vw, 90px); padding-bottom: clamp(40px, 7vw, 64px); }
@@ -739,7 +743,7 @@ footer a:hover{ color: var(--accent); }
   .page-hero .lede{ padding-bottom: 0; }
 
   .section-title{ font-size: clamp(28px, 7vw, 40px); }
-  .mf-claim{ font-size: clamp(28px, 7vw, 40px); margin-bottom: 32px; }
+  .mf-claim{ font-size: clamp(24px, 6vw, 34px); margin-bottom: 32px; }
   .contact-h h2{ font-size: clamp(36px, 11vw, 64px); }
   .next-link .title{ font-size: clamp(28px, 8vw, 44px); }
 
