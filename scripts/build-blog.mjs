@@ -136,8 +136,10 @@ ${nav(1, 'blog')}
         <span class="eyebrow">${post.date_display} · koláž</span>
         <a class="post-back-top" href="../blog.html">← zpět na blog</a>
       </div>
-      <h1>${esc(post.title)}</h1>
-      <p class="lede italic">${esc(post.perex)}</p>
+      <h1>${esc(post.title)}</h1>${
+        post.hide_subtitle ? '' : `
+      <p class="lede italic">${esc(post.perex)}</p>`
+      }
     </div>
   </div>
 </header>
