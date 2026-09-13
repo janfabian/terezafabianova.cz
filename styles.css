@@ -564,6 +564,15 @@ section.pt-hero-section{ padding-top: clamp(20px, 2.5vw, 36px); }
 .post-page ul{ margin: 0 0 22px; padding-left: 1.2em; font-size: var(--fs-body-lg); line-height: 1.75; color: var(--ink); }
 .post-page li{ margin-bottom: 4px; }
 .post-page hr{ border: 0; border-top: 1px solid var(--rule); margin: 14px 0 34px; }
+/* Reference list at the foot of a post — smaller, muted, URLs may wrap. */
+.post-page .post-sources p{
+  margin: 0 0 12px;
+  font-size: var(--fs-small);
+  line-height: 1.55;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.post-page .post-sources p:last-child{ margin-bottom: 0; }
 .post-page a{ color: var(--ink); border-bottom: 1px solid var(--accent); text-decoration: none; }
 .post-page a:hover{ color: var(--accent); }
 
